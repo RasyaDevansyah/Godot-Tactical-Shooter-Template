@@ -68,9 +68,11 @@ project.godot        # Project settings (input map + folder color)
 - You can replace the sample weapon logic with your own weapon system; `player.tscn` already demonstrates basic shooting input.
 
 ## Credits
----
+
 Created by [RasyaDevansyah](https://github.com/RasyaDevansyah)
+
 Pistol Model by [j_albert05](https://www.instagram.com/j_albert05)
+
 ---
 
 Feel free to copy this `Scenes/Player` folder into your own Godot projects and adapt it.
