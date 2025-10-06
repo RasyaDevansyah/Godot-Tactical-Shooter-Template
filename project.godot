@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="TacticalShooterDemo"
+config/name="Godot-Tactical-Shooter-Template"
 config/tags=PackedStringArray("research")
 run/main_scene="res://Scenes/World.tscn"
 config/features=PackedStringArray("4.5", "Forward Plus")
