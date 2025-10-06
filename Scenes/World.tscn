@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=3 uid="uid://tbt5amptfwb"]
+
+[ext_resource type="Texture2D" uid="uid://8bnltx045gvw" path="res://godot-prototype-texture/Vector/checker_black_512x512.svg" id="1_8d57h"]
+[ext_resource type="PackedScene" uid="uid://ewnq77s7ioti" path="res://Scenes/Player/player.tscn" id="2_j0p05"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_bktkc"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_ftcev"]
+sky_material = SubResource("ProceduralSkyMaterial_bktkc")
+
+[sub_resource type="Environment" id="Environment_y7iuc"]
+background_mode = 2
+sky = SubResource("Sky_ftcev")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_higyj"]
+albedo_texture = ExtResource("1_8d57h")
+albedo_texture_force_srgb = true
+uv1_triplanar = true
+
+[node name="Node3D" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_y7iuc")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+use_collision = true
+size = Vector3(52.5576, 0.001, 37.9729)
+material = SubResource("StandardMaterial3D_higyj")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.7231, 2.85621, -1.78809)
+use_collision = true
+size = Vector3(11.2737, 7.31507, 8.30957)
+material = SubResource("StandardMaterial3D_higyj")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.7231, 2.85621, 10.3021)
+use_collision = true
+size = Vector3(11.2737, 7.31507, 8.30957)
+material = SubResource("StandardMaterial3D_higyj")
+
+[node name="Player" parent="." instance=ExtResource("2_j0p05")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00986, 0)
