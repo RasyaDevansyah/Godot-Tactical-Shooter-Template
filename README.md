@@ -1,5 +1,6 @@
 # Godot Tactical Shooter Player Template
 
+<img width="1154" height="644" alt="image" src="https://github.com/user-attachments/assets/4f89ffe3-76a6-436c-96ad-5aa5178f60cb" />
 
 This repository provides a ready-to-use player implementation for Godot 4.5. The entire controller and supporting resources are self-contained in the `Scenes/Player` folder and can be copied directly into your own Godot projects.
 
@@ -18,6 +19,8 @@ This repository provides a ready-to-use player implementation for Godot 4.5. The
 	- The `Scenes/Player` folder contains everything you need for the player (scene, scripts, textures).
 	- Copy the entire `Player` folder into your own Godot project's `Scenes` folder (keep the folder structure).
 
+<img width="390" height="140" alt="image" src="https://github.com/user-attachments/assets/e410cab1-e79e-4c70-87b8-97d4b046672b" />
+
 
 2. Add the Player Scene to Your World
 
@@ -35,6 +38,9 @@ This repository provides a ready-to-use player implementation for Godot 4.5. The
 	  - `leanRight` (default: E)
 
 	- If you copy the controller into a new project, make sure to add these actions in Project > Project Settings > Input Map.
+
+<img width="886" height="469" alt="image" src="https://github.com/user-attachments/assets/26550370-13ae-4bd1-b944-8280e492306c" />
+
 
 4. Test the Player
 
